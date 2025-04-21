@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: "Indie Flower", cursive;
+    font-size: 16px;
+}
+
+/*Estilo de boton dark*/
+.btn-dark {
+    background-color: #481953;
+    width: 250px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e6a6f5;
+     
+}
+
+.btn-dark:hover{
+    background-color: #292626;
+    transform: scale(1.1); 
+}
+
+/* Estilo bordes y sombra*/
+.shadow{
+    box-shadow: 5px 5px #a382ab;
+    border: 2px solid #481953;
+    border-radius: 1rem;
+}
+
+  
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e6a6f5, #481953);
+
+}
+
+header{
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #e6a6f5;
+    z-index: 1000;
+}
+
+
+.nav{
+    min-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin: 1.5rem 0;
+    
+}
+
+.nav li{
+    list-style: none;
+    ;
+}
+
+.nav li a{
+    text-decoration: none;
+}
+
+main{
+    width: 70%;
+    min-width: 1000px;
+    min-height: 70vh;
+    margin: 1.5rem auto;
+}
+
+.about-me-container{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-right: 0.5rem;   
+}
+
+.about-me_img{
+    display: inline-block;
+    flex: 0 1 200px;
+    
+}
+
+.img-aboutme{
+    width: 100%;
+    min-width: 200px;
+    border-radius: 50%;
+}
+
+.about-me-p{
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+
+
+/* Todas las section */
+section{
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    scroll-margin-top: 15vh;
+    align-items: center;
+}
+
+/* Estilo de la sección tarjetas */
+.article-card{
+    display: flex;
+    flex-direction: column;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    border: 2px solid #481953;
+    border-radius: 1rem;
+    box-shadow: 5px 5px #643271;
+    min-width: 260px;
+    max-width: 600px;
+    padding: 1rem;
+    gap: 1rem;
+    align-self: center;
+}
+
+.img-card{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Estilos habilidades */
+.skills{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+/* Estilos Formulario de Contacto*/
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-contact-par-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.form-contact-label{
+    display: block;
+    min-width: 100px;
+    text-align: end;
+}
+
+.form-contact-input{
+    padding: 0 0.5rem;
+    
+}
+
+.form-contact-par-container-textarea{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.form-contact-par-container-textarea label{
+    text-align: start;
+}
+
+.form-contact-par-container-textarea textarea{
+    height: 100px;
+}
+
+/* Peliculas*/
+
+.movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.movie-title{
+    min-height: 60px;
+}
+
+.movie{
+    max-width: 250px; 
+    min-height: 600px;   
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie-container-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.movie:hover{
+    transform: scale(1.01); 
+}
+
+.movies-container figure{
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-movies{
+    width: 35%;
+    min-width: 140px;
+    min-height: 215px;
+    border-radius: 1rem;
+
+}
+
+/* Estilos Footer*/
+
+footer{
+    min-height: 10vh;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #481953;
+  color: #d97fed;
+
+}
+
+.footer p{
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-Width: 1370px ){
+    .btn-dark {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-Width: 1146px ){
+    .btn-dark {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-Width: 1020px){
+    main{
+        min-width: 600px;
+        width: 100%;
+    }
+    section{
+        padding-left: 1rem;
+        
+    }
+    .movie{
+        max-width: 350px;
+    } 
+}
+
+@media only screen and (max-Width: 850px ){   
+    .btn-dark {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-Width: 615px ){  
+    main{
+        min-width: 500px;
+    }
+     section{
+        align-items: center;
+        width: 90%;
+     }
+    .about-me-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .about-me_img{
+        max-width: 200px;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-Width: 530px ){   
+    nav .btn-dark {
+        width: 60px;
+        font-size: 0.7rem;
+    }
+    main{
+        min-width: 450px;
+    }
+
+}
+
+@media only screen and (max-Width: 460px ){   
+    main{
+        min-width: 380px;
+    }
+}
+
+@media only screen and (max-Width: 420px){
+    .form-contact-par-container{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .form-contact-label{
+        text-align: start;
+    }
+}
