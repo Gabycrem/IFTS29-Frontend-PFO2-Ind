@@ -44,7 +44,7 @@ El proyecto se organiza en la siguiente estructura de carpetas y archivos:
 - [X] Repositorio en GitHub creado.
 - [X] Proyecto subido al repositorio.
 - [X] Proyecto publicado utilizando GitHub Pages.
-- [ ] En el "README.md" se indica la URL de GitHub Pages.
+- [X] En el "README.md" se indica la URL de GitHub Pages.
 
 ### Uso de Google Fonts:
 - [ ] Enlace a Google Fonts incluido en la sección "head" del HTML.
@@ -88,3 +88,13 @@ El proyecto se organiza en la siguiente estructura de carpetas y archivos:
 - Usar **CSS variables** para facilitar la personalización del tema de colores.
 - Añadir una **optimización para SEO**, incluyendo metaetiquetas adicionales y estructura de encabezados adecuada.
 - Evaluar la integración de **JavaScript** para interacciones dinámicas, como un formulario de contacto con validaciones en tiempo real.
+
+---
+## Integración de JavaScript
+
+### Se implementaron 5 funcionalidades
+
+- #6 Creación de Contenido Dinámico
+ * Descripción: La creación de contenido dinámico se implementó para la sección de "Películas Favoritas". Utilizando un array de objetos, se generan automáticamente las tarjetas con la información de cada película.
+ * Cómo se implementó:Se creó un array peliculasFavoritas que contiene los datos de las películas (título, imagen, descripción y texto alternativo para la imagen). Se creó la función loadCards(), que recorre el array y, por cada película, crea dinámicamente un artículo (<article>) con la estructura HTML necesaria. Cada artículo se agrega al contenedor de películas mediante appendChild.
+ *Justificación: Esta metodología permite manejar el contenido de manera más eficiente, facilitando la actualización o ampliación de las películas con solo modificar el array. Además, mejora la escalabilidad y organización del código, haciendo que el HTML se actualice de manera automática y evitando duplicación de código.
