@@ -98,3 +98,11 @@ El proyecto se organiza en la siguiente estructura de carpetas y archivos:
  * Descripción: La creación de contenido dinámico se implementó para la sección de "Películas Favoritas". Utilizando un array de objetos, se generan automáticamente las tarjetas con la información de cada película.
  * Cómo se implementó:Se creó un array peliculasFavoritas que contiene los datos de las películas (título, imagen, descripción y texto alternativo para la imagen). Se creó la función loadCards(), que recorre el array y, por cada película, crea dinámicamente un artículo (<article>) con la estructura HTML necesaria. Cada artículo se agrega al contenedor de películas mediante appendChild.
  * Justificación: Esta metodología permite manejar el contenido de manera más eficiente, facilitando la actualización o ampliación de las películas con solo modificar el array. Además, mejora la escalabilidad y organización del código, haciendo que el HTML se actualice de manera automática y evitando duplicación de código.
+
+#### 2. Contador de visitas (#9)
+
+#### 3. Modo Oscuro/Claro (#2)
+
+#### 4. Validación de Formulario (#1) y Pop-up de Confirmación de Envío(#3)
+
+#### 5. Ocultar y/o Mostrar Contenido (#4)

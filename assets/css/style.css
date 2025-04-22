@@ -143,6 +143,12 @@ section{
     align-self: center;
 }
 
+.project-card{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
 .img-card{
     width: 100%;
     border-radius: 1rem;

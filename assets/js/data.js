@@ -42,3 +42,23 @@ const peliculasFavoritas = [
       description: "Soy fan de esta película por la forma en que expande el universo de Harry Potter, mostrándonos una magia más antigua y fascinante. Me encanta la idea de explorar nuevas criaturas y conocer más sobre la historia mágica."
     }
   ];
+
+const proyectos = [
+  {
+    _id: 1,
+    title: "Amazing Events - Proyecto desarrollado en MindHub",
+    image: "./assets/img/amazingEvents.jpg",
+    alt: "Captura de pantalla de proyecto Amazing Events",
+    description: "Amazing Events es una aplicación web interactiva que permite explorar distintos tipos de eventos a través de una galería de tarjetas visuales. Cada tarjeta muestra una imagen representativa del evento, su nombre, descripción, precio y un botón para acceder a más detalles. El proyecto fue desarrollado con HTML, CSS y JavaScript, y cuenta con un diseño responsive que se adapta a diferentes tamaños de pantalla. Incorpora funcionalidades como búsqueda por texto y filtros por categorías, lo que permite al usuario encontrar fácilmente los eventos de su interés. Además, incluye navegación entre secciones como eventos futuros, pasados, estadísticas y contacto. Este trabajo me permitió fortalecer habilidades en manipulación del DOM, renderizado dinámico de contenido y lógica de filtrado combinada.",
+    imagen: "./assets/img/amazingEvents.jpg"
+
+  },
+  {
+    _id: 2,
+    title: "Página Web para Club de Hockey",
+    image: "./assets/img/mightyDucksHL.jpg",
+    alt: "Captura de pantalla de proyecto para Liga de Hockey",
+    description: "Desarrollo de una página web para un club de hockey, centrada en facilitar la comunicación entre los miembros, la difusión de información relevante sobre el club y la gestión de registros. La plataforma busca ofrecer una experiencia intuitiva, moderna y accesible, brindando a los usuarios una forma fácil de obtener información y registrarse para participar en las actividades del club."
+
+  },
+];
