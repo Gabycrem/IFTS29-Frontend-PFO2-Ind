@@ -1,45 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+:root{
+    --font-family: "Indie Flower", cursive;
+    --font-size: 16px;
+    --primary-color-light: #e6a6f5;
+    /* --primary-color-dark: */
+    --secondary-color: #481953;
+    --tertiary-color: #a382ab;
+    --fourth-color: #292626;
+    --five-color: #643271;
+    --text-color: #100418;
+}
+
+.dark-theme{
+    --primary-color-light: #3e2951; /* fondo claro en modo oscuro */
+    --secondary-color: #100418;     /* reemplazo de #481953 */
+    --tertiary-color: #5e3b64;      /* sombra más oscura */
+    --fourth-color: #2c1d33;        /* hover btn */
+    --five-color: #391b44;
+    --text-color: #e6a6f5; 
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
 
-:root{
-    font-family: "Indie Flower", cursive;
-    font-size: 16px;
-}
+
 
 /*Estilo de boton dark*/
 .btn-dark {
-    background-color: #481953;
+    background-color: var(--secondary-color);
     width: 250px;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #e6a6f5;
-     
 }
 
 .btn-dark:hover{
-    background-color: #292626;
+    background-color: var(--fourth-color);
     transform: scale(1.1); 
 }
 
 /* Estilo bordes y sombra*/
 .shadow{
-    box-shadow: 5px 5px #a382ab;
-    border: 2px solid #481953;
+    box-shadow: 5px 5px var(--tertiary-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 1rem;
 }
 
   
 body{
     min-height: 100vh;
-    background: linear-gradient(to bottom, #e6a6f5, #481953);
-
+    background: linear-gradient(to bottom, var(--primary-color-light),var(--secondary-color));
+    color: var(--text-color);
 }
 
 header{
@@ -50,8 +69,19 @@ header{
     text-align: center;
     position: sticky;
     top: 0;
-    background-color: #e6a6f5;
+    background-color: var(--primary-color-light);
     z-index: 1000;
+}
+
+header h1{
+    margin-top: 1rem;
+}
+
+#btnChangeTheme, #btnShowContact{
+    align-self: flex-end;
+    width:max-content;
+    padding: 0.5rem;
+    margin-right: 3rem;
 }
 
 
@@ -133,9 +163,9 @@ section{
 }
 
 .card{
-    border: 2px solid #481953;
+    border: 2px solid var(--secondary-color);
     border-radius: 1rem;
-    box-shadow: 5px 5px #643271;
+    box-shadow: 5px 5px var(--five-color);
     min-width: 260px;
     max-width: 600px;
     padding: 1rem;
@@ -163,6 +193,11 @@ section{
 
 /* Estilos Formulario de Contacto*/
 
+.title-contact{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
 .form-contact{
     display: flex;
     flex-direction: column;
@@ -255,8 +290,8 @@ footer{
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #481953;
-  color: #d97fed;
+  background-color: var(--secondary-color);
+  color: #e6a6f5;
 
 }
 

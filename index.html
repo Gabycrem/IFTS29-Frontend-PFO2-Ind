@@ -9,6 +9,9 @@
 <body>
     <header class="header">
         <h1>Bienvenidos a Mi Portafolio</h1>
+        <button id="btnChangeTheme" class="btn-dark shadow">
+            🌙
+          </button>
         <nav class="navbar">
             <ul class="nav">
                 <li ><a class="btn-dark shadow" href="#about-me">Sobre Mi</a></li>
@@ -79,8 +82,13 @@
 
         <!-- Formulario de Contacto -->
         <section id="contact">
-            <h2>CONTACTO</h2>
-            <form class="form-contact card">
+            <div class="title-contact">
+                <h2>CONTACTO</h2>
+                <button id="btnShowContact" class="btn-dark shadow">
+                    🙈
+                </button>
+            </div>
+            <form id="formContact" class="form-contact card">
                 <div class="form-contact-par-container">
                     <label class="form-contact-label" for="name">Nombre:</label>
                     <input class="form-contact-input shadow" type="text" id="name" name="name" placeholder="Your name" required> 

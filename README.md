@@ -84,10 +84,10 @@ El proyecto se organiza en la siguiente estructura de carpetas y archivos:
 
 ---
 ## Propuestas de Mejora
-- Implementar **dark mode** con CSS variables para mejorar la experiencia del usuario.
-- Usar **CSS variables** para facilitar la personalización del tema de colores.
-- Añadir una **optimización para SEO**, incluyendo metaetiquetas adicionales y estructura de encabezados adecuada.
-- Evaluar la integración de **JavaScript** para interacciones dinámicas, como un formulario de contacto con validaciones en tiempo real.
+- [X] Implementar **dark mode** con CSS variables para mejorar la experiencia del usuario.
+- [X] Usar **CSS variables** para facilitar la personalización del tema de colores.
+- [X] Añadir una **optimización para SEO**, incluyendo metaetiquetas adicionales y estructura de encabezados adecuada.
+- [X] Evaluar la integración de **JavaScript** para interacciones dinámicas, como un formulario de contacto con validaciones en tiempo real.
 
 ---
 ## Integración de JavaScript
@@ -100,9 +100,23 @@ El proyecto se organiza en la siguiente estructura de carpetas y archivos:
  * Justificación: Esta metodología permite manejar el contenido de manera más eficiente, facilitando la actualización o ampliación de las películas con solo modificar el array. Además, mejora la escalabilidad y organización del código, haciendo que el HTML se actualice de manera automática y evitando duplicación de código.
 
 #### 2. Contador de visitas (#9)
+* Descripción: Se implementó un contador que registra cuántas veces se visitó el sitio dede el mismo navegador.
+* Cómo se implementó:Se utilizó localStorage para guardar el número de visitas. Cada vez que se recarga la página, se incrementa el contador y se actualiza el valor mostrado en pantalla.
+* Justificación: Permite aplicar almacenamiento persistente en el navegador para registrar interacciones del usuario, sin necesidad de una base de datos.
+
 
 #### 3. Modo Oscuro/Claro (#2)
+* Descripción: Se implementó la funcionalidad de alternar entre modo claro y modo oscuro en toda la página.
+* Cómo se implementó: Se agregó un botón con un ícono que, al hacer clic, alterna una clase en el body que cambia los estilos del sitio. Se utiliza localStorage para guardar la preferencia del usuario y aplicarla al cargar la página.
+* Justificación: Mejora la accesibilidad visual y la personalización del sitio para distintos tipos de usuarios o ambientes de luz.
 
 #### 4. Validación de Formulario (#1) y Pop-up de Confirmación de Envío(#3)
+* Descripción: Se validan los campos del formulario de contacto para asegurar que estén completos y correctamente ingresados. Al enviar correctamente, se muestra un mensaje emergente confirmando el envío.
+* Cómo se implementó: Se escucha el evento submit del formulario. Se verifica que cada campo tenga contenido válido, y si alguno no lo tiene, se evita el envío y se enfoca automáticamente ese campo. Si todo es válido, se muestra un alert() informando que el mensaje fue enviado.
+* Justificación:  Garantiza la calidad de los datos ingresados y mejora la experiencia del usuario con mensajes claros e interactivos.
+
 
 #### 5. Ocultar y/o Mostrar Contenido (#4)
+* Descripción:  Se agregó un botón con un ícono de ojo en la sección de contacto que permite mostrar u ocultar el formulario.
+* Cómo se implementó:  Se definió una función que alterna el display del formulario entre 'none' y 'flex' al hacer clic en el botón. También se cambia el ícono del botón según el estado.
+* Justificación: Mejora la limpieza visual del sitio y da control al usuario sobre qué secciones desea ver o esconder, manteniendo un diseño más dinámico.
